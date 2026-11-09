@@ -1,0 +1,21 @@
+{
+  "name": "afif-web-portfolio",
+  "version": "1.0.0",
+  "description": "Portofolio Modern Web Developer & AI Systems - Naufal 'Afif Alfadhil",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve .",
+    "dev": "npx serve ."
+  },
+  "keywords": [
+    "portfolio",
+    "web-developer",
+    "nextjs",
+    "fastapi",
+    "rag",
+    "qdrant"
+  ],
+  "author": "Naufal 'Afif Alfadhil",
+  "license": "MIT"
+}
+
