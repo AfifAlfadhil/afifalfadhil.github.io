@@ -1,32 +1,637 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Naufal ’Afif Alfadhil</title>
-<meta name="description" content="Portofolio Naufal ’Afif Alfadhil: antarmuka web, dan aplikasi full-stack.">
-<link rel="icon" href="data:,">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,200..800&display=swap">
-<link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-<div id="bar"></div>
-<header class="top"><a href="#top">Naufal ’Afif A.</a><nav aria-label="Navigasi utama"><a href="#proyek">Proyek</a><a href="#eksperimen">Eksperimen</a><a href="#kompetisi">Kompetisi</a><a href="#keahlian">Keahlian</a><a href="#kontak">Kontak</a></nav></header>
-<main>
-<section class="hero" id="top">
-<h1 aria-label="Naufal ’Afif Alfadhil"><span class="ln"><span data-split>Naufal</span></span><span class="ln"><span data-split>’Afif</span></span><span class="ln"><span data-split>Alfadhil</span></span></h1>
-<div class="hero-foot"><p>Web developer. Full-stack, antarmuka, dan data science.</p><span class="cue">Gulir</span></div>
-</section>
-<section class="intro"><p class="scrub">Saya membangun antarmuka dan sistem di baliknya: dari aplikasi Next.js dan FastAPI, sistem tanya-jawab atas dokumen dengan RAG, sampai dashboard untuk kompetisi analitik data.</p></section>
-<section id="proyek" class="showcase" style="--n:4"><div class="sec"><h2>Proyek</h2></div><div class="track"><div class="stage"><div class="fold-back" aria-hidden="true"></div><div class="cards"><article class="card c1" id="hillab"><div class="ct"><h3>HillabKMS</h3><p class="meta">Full-stack dan pipeline RAG</p><p class="sum">Sistem pencarian semantik untuk dokumen internal organisasi. Pengguna mengunggah PDF, bertanya dengan bahasa biasa, dan menerima jawaban beserta rujukan nomor halaman. Monorepo Next.js dan FastAPI, dijalankan dengan Docker Compose.</p><ul class="pills"><li>Next.js</li><li>TypeScript</li><li>Tailwind CSS</li><li>FastAPI</li><li>Python</li><li>Qdrant</li><li>PostgreSQL</li><li>Docker</li></ul><p class="lnk"><a href="https://github.com/Basingz/HillabKMS" rel="noopener" target="_blank">Repositori</a><!-- Demo: tempel tautan deployment di sini --></p></div><div class="shot-ph" role="img" aria-label="Tempat tangkapan layar HillabKMS"><!-- Ganti dengan: <img src="assets/hillab.jpg" alt="Tangkapan layar HillabKMS"> --></div></article><article class="card c2" id="saka"><div class="ct"><h3>SAKA, Sistem Asisten Kampus UNS</h3><p class="meta">Backend dan AI</p><p class="sum">Chatbot untuk mahasiswa S1 UNS yang menjawab pertanyaan regulasi akademik dari SK dan pedoman resmi, termasuk berkas hasil scan yang dibaca dengan OCR. Jawaban dibatasi pada dokumen resmi dan mencantumkan pasal sumbernya.</p><ul class="pills"><li>FastAPI</li><li>Python</li><li>Gemini 2.5 Flash</li><li>ChromaDB</li><li>Tesseract OCR</li><li>OpenCV</li></ul><p class="lnk"><a href="https://github.com/AfifAlfadhil/sistemakademik" rel="noopener" target="_blank">Repositori</a><!-- Demo: tempel tautan deployment di sini --></p></div><div class="shot-ph" role="img" aria-label="Tempat tangkapan layar SAKA, Sistem Asisten Kampus UNS"><!-- Ganti dengan: <img src="assets/saka.jpg" alt="Tangkapan layar SAKA, Sistem Asisten Kampus UNS"> --></div></article><article class="card c3" id="movie"><div class="ct"><h3>Movie</h3><p class="meta">Full-stack</p><p class="sum">Katalog film dengan data dari TMDB API: film trending, filter genre, pencarian, sinopsis, dan watchlist pribadi. Dibangun dengan Laravel, Blade, dan Tailwind CSS.</p><ul class="pills"><li>PHP</li><li>Laravel</li><li>Blade</li><li>Tailwind CSS</li><li>Vite</li><li>TMDB API</li></ul><p class="lnk"><a href="https://github.com/AfifAlfadhil/Movie" rel="noopener" target="_blank">Repositori</a><!-- Demo: tempel tautan deployment di sini --></p></div><div class="shot-ph" role="img" aria-label="Tempat tangkapan layar Movie"><!-- Ganti dengan: <img src="assets/movie.jpg" alt="Tangkapan layar Movie"> --></div></article><article class="card c4" id="growpath"><div class="ct"><h3>GrowPath</h3><p class="meta">Aplikasi web gamifikasi</p><p class="sum">Habit tracker dengan metafora merawat tanaman. Menyelesaikan kebiasaan atau tugas memberi XP dan koin yang menumbuhkan tanaman digital, dan koin bisa dipakai di toko kustomisasi pot, frame, dan latar belakang.</p><ul class="pills"><li>PHP</li><li>Laravel</li><li>Vite</li></ul><p class="lnk"><a href="https://github.com/AfifAlfadhil/growpath" rel="noopener" target="_blank">Repositori</a><!-- Demo: tempel tautan deployment di sini --></p></div><div class="shot-ph" role="img" aria-label="Tempat tangkapan layar GrowPath"><!-- Ganti dengan: <img src="assets/growpath.jpg" alt="Tangkapan layar GrowPath"> --></div></article></div><div class="fold-front" aria-hidden="true"></div><div class="hud"><span class="cnt">01 / 04</span><span class="dots"><button type="button" aria-label="Proyek 1"></button><button type="button" aria-label="Proyek 2"></button><button type="button" aria-label="Proyek 3"></button><button type="button" aria-label="Proyek 4"></button></span></div></div></div></section>
-<section id="eksperimen"><div class="sec"><h2>Eksperimen</h2></div><div class="acc" id="memory"><button class="acc-btn" aria-expanded="false" aria-controls="memory-b"><span class="t">OMORI’s Memory Game</span><span class="m">Full-stack</span><span class="pl" aria-hidden="true"></span></button><div class="acc-body" id="memory-b"><div class="ov"><div class="acc-in"><p>Game mencocokkan kartu bertema OMORI dengan animasi flip 3D. Tersedia dua versi: statis dengan skor di localStorage, dan Python dengan backend FastAPI yang menyimpan leaderboard sepuluh besar di server.</p><ul><li>Kartu diacak setiap permainan baru.</li><li>Musik latar dengan tombol hidup/mati.</li><li>Dokumentasi API otomatis lewat Swagger UI (versi Python).</li></ul><p class="stack">HTML, CSS, JavaScript, FastAPI, Pydantic</p><p class="lnk"><a href="https://github.com/AfifAlfadhil/omori-memory-game" rel="noopener" target="_blank">Repositori</a><a href="https://afifalfadhil.github.io/omori-memory-game/" rel="noopener" target="_blank">Demo</a></p></div></div></div></div><div class="acc" id="morse"><button class="acc-btn" aria-expanded="false" aria-controls="morse-b"><span class="t">MorseFlow</span><span class="m">Pengembang</span><span class="pl" aria-hidden="true"></span></button><div class="acc-body" id="morse-b"><div class="ov"><div class="acc-in"><p>Penerjemah kode Morse dengan satu tombol. Tekanan di bawah 200 ms dibaca titik, lebih lama dibaca garis. Bunyi 600 Hz dibuat langsung dengan Web Audio API.</p><ul><li>Huruf terkunci setelah 0,5 detik diam, spasi kata setelah 1,2 detik.</li><li>Tersedia versi web dan versi desktop Python dengan OpenCV.</li></ul><p class="stack">Web Audio API, JavaScript, Python, OpenCV</p><p class="lnk"><a href="https://github.com/AfifAlfadhil/morse-code-translator" rel="noopener" target="_blank">Repositori</a><a href="https://afifalfadhil.github.io/morse-code-translator/" rel="noopener" target="_blank">Demo</a></p></div></div></div></div><div class="acc" id="mdedit"><button class="acc-btn" aria-expanded="false" aria-controls="mdedit-b"><span class="t">Markdown Editor dan Catatan</span><span class="m">Frontend</span><span class="pl" aria-hidden="true"></span></button><div class="acc-body" id="mdedit-b"><div class="ov"><div class="acc-in"><p>Editor Markdown dengan mode kode (CodeMirror) dan mode teks kaya (Tiptap), live preview, tabel, dan task list.</p><ul><li>Syntax highlighting memakai parser Lezer.</li><li>Ekstensi Tiptap: tabel, bubble menu, task item.</li></ul><p class="stack">React, CodeMirror, Tiptap, TypeScript</p><p class="lnk"><!-- Repositori: tempel URL repo di sini --><!-- Demo: tempel tautan deployment di sini --></p></div></div></div></div><div class="acc" id="shmup"><button class="acc-btn" aria-expanded="false" aria-controls="shmup-b"><span class="t">2D Pixel Shooter</span><span class="m">Game programmer</span><span class="pl" aria-hidden="true"></span></button><div class="acc-body" id="shmup-b"><div class="ov"><div class="acc-in"><p>Game shoot ’em up 2D di Godot 4 dengan GDScript: komponen HealthComponent, spawner musuh acak, dan parallax vertikal.</p><ul><li>Objek di luar layar dibersihkan otomatis dengan queue_free.</li></ul><p class="stack">Godot 4, GDScript, Pixel art</p><p class="lnk"><a href="https://github.com/AfifAlfadhil/2D-Pixel-Shooter-Game" rel="noopener" target="_blank">Repositori</a><!-- Demo: tempel tautan deployment di sini --></p></div></div></div></div><div class="acc" id="album"><button class="acc-btn" aria-expanded="false" aria-controls="album-b"><span class="t">OMORI Photo Album</span><span class="m">Frontend</span><span class="pl" aria-hidden="true"></span></button><div class="acc-body" id="album-b"><div class="ov"><div class="acc-in"><p>Replika photo album Basil dari OMORI dalam satu file HTML. Tiga album (Faraway Town 48 foto, Headspace 12 foto, Black Space 24 foto), pembalik halaman, dan musik latar.</p><ul><li>Seluruh halaman, gaya, dan skrip ada di satu index.html tanpa build.</li></ul><p class="stack">HTML, CSS, JavaScript</p><p class="lnk"><a href="https://github.com/AfifAlfadhil/omori-photo-album" rel="noopener" target="_blank">Repositori</a><a href="https://afifalfadhil.github.io/omori-photo-album/" rel="noopener" target="_blank">Demo</a></p></div></div></div></div></section>
-<section id="kompetisi"><div class="sec"><h2>Kompetisi</h2></div><div class="acc" id="visbi"><button class="acc-btn" aria-expanded="false" aria-controls="visbi-b"><span class="t">VISBI 2026</span><span class="m">POSTIK UNS</span><span class="pl" aria-hidden="true"></span></button><div class="acc-body" id="visbi-b"><div class="ov"><div class="acc-in"><p><span class="res">Finalis</span></p><p>Dashboard eksekutif interaktif di Power BI untuk data pemasaran dan penjualan Januari sampai Desember 2025, dengan halaman Overview, Revenue &amp; Sales, Marketing &amp; Ads, KOL &amp; Web Analytics, Customer Insight, serta Budget &amp; Planning. Tim Perkedel Kiki.</p><ul><li>Dashboard Power BI (.pbix)</li><li>Laporan insight strategis (PDF)</li><li>Notebook Jupyter: pembersihan data dan EDA</li></ul><p class="stack">Analitik data dan business intelligence. Power BI, Python, Data cleaning</p></div></div></div></div><div class="acc" id="gamma"><button class="acc-btn" aria-expanded="false" aria-controls="gamma-b"><span class="t">Gammafest 2026</span><span class="m">Data science dan machine learning</span><span class="pl" aria-hidden="true"></span></button><div class="acc-body" id="gamma-b"><div class="ov"><div class="acc-in"><p>Model prediktif dengan feature engineering, ekstraksi metadata teks dokumen ilmiah, dan ensambel model.</p><ul><li>Pipeline end-to-end (build_v3.py)</li><li>Notebook EDA dan modeling</li><li>Generator file submission</li></ul><p class="stack">Data science dan machine learning. Python, Scikit-Learn, Feature engineering</p></div></div></div></div><div class="acc" id="uxvidia"><button class="acc-btn" aria-expanded="false" aria-controls="uxvidia-b"><span class="t">UXvidia, Arkavidia ITB</span><span class="m">Institut Teknologi Bandung</span><span class="pl" aria-hidden="true"></span></button><div class="acc-body" id="uxvidia-b"><div class="ov"><div class="acc-in"><p>Menyelesaikan masalah nyata dengan Design Thinking: riset persona, wireframe, dan prototipe antarmuka.</p><ul><li>Case study UI/UX</li><li>Prototipe high-fidelity di Figma</li><li>Dokumentasi usability testing</li></ul><p class="stack">Desain produk UI/UX. Figma, Design Thinking, User testing</p></div></div></div></div><div class="acc" id="netro"><button class="acc-btn" aria-expanded="false" aria-controls="netro-b"><span class="t">BCC Netropreneur UGM</span><span class="m">Universitas Gadjah Mada</span><span class="pl" aria-hidden="true"></span></button><div class="acc-body" id="netro-b"><div class="ov"><div class="acc-in"><p>Merumuskan inovasi produk perangkat lunak, studi kelayakan pasar, analisis SWOT dan Porter, serta model komersialisasi.</p><ul><li>Casebook dan deck presentasi semifinal</li><li>Studi kelayakan pasar dan finansial</li></ul><p class="stack">Studi kasus bisnis teknologi. Strategi produk, Analisis pasar</p></div></div></div></div><div class="acc" id="cdw"><button class="acc-btn" aria-expanded="false" aria-controls="cdw-b"><span class="t">Campus Data Week Challenge</span><span class="m">Analitik data</span><span class="pl" aria-hidden="true"></span></button><div class="acc-body" id="cdw-b"><div class="ov"><div class="acc-in"><p>Mengolah data transaksi dan operasional mentah, menemukan anomali, lalu menyajikan rekomendasi yang mudah dipahami pemangku kepentingan.</p><ul><li>Analisis Task 1 dan Task 2</li><li>Laporan rekomendasi berbasis data</li></ul><p class="stack">Analitik data. Python, Analitik bisnis</p></div></div></div></div><div class="acc" id="calico"><button class="acc-btn" aria-expanded="false" aria-controls="calico-b"><span class="t">CALICO Fall</span><span class="m">UC Berkeley CALICO</span><span class="pl" aria-hidden="true"></span></button><div class="acc-body" id="calico-b"><div class="ov"><div class="acc-in"><p>Soal algoritma dengan batas komputasi ketat: graf, dynamic programming, dan matematika.</p><ul><li>Penyelesaian problem set algoritmik</li></ul><p class="stack">Pemrograman kompetitif. C++, Python, Algoritma</p></div></div></div></div></section>
-<section id="keahlian"><div class="sec"><h2>Keahlian</h2></div><div class="skills"><div><h3>Frontend dan web</h3><ul><li>Next.js (App Router)</li><li>React</li><li>TypeScript</li><li>Tailwind CSS</li><li>JavaScript</li><li>HTML dan CSS</li></ul></div><div><h3>Backend dan API</h3><ul><li>FastAPI</li><li>Python</li><li>REST API</li><li>PostgreSQL</li><li>SQLAlchemy</li><li>Node.js</li></ul></div><div><h3>AI dan vector search</h3><ul><li>Arsitektur RAG</li><li>Qdrant</li><li>ChromaDB</li><li>Gemini API</li><li>OCR (Tesseract, OpenCV)</li></ul></div><div><h3>DevOps dan analitik</h3><ul><li>Docker dan Compose</li><li>Git dan GitHub</li><li>Power BI</li><li>EDA dan data cleaning</li><li>Linux dan Bash</li></ul></div></div></section>
-<section class="contact" id="kontak"><p>Terbuka untuk diskusi soal pengembangan perangkat lunak dan sistem AI.</p>
-<a class="mail" href="mailto:novalnoval575@gmail.com">novalnoval575@gmail.com</a>
-<div class="row"><button id="copy" type="button" hidden>Salin email</button><a class="gh" href="https://github.com/AfifAlfadhil" rel="noopener" target="_blank">github.com/AfifAlfadhil</a></div></section>
-</main>
-<script src="js/main.js"></script>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Naufal ’Afif Alfadhil</title>
+        <meta name="description" content="Portofolio Naufal ’Afif Alfadhil" />
+        <link rel="icon" href="data:," />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,200..800&display=swap"
+        />
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <div id="bar"></div>
+        <header class="top">
+            <a href="#top">Naufal ’Afif A.</a>
+            <nav aria-label="Navigasi utama">
+                <a href="#proyek">Proyek</a><a href="#eksperimen">Eksperimen</a
+                ><a href="#kompetisi">Kompetisi</a
+                ><a href="#keahlian">Keahlian</a><a href="#kontak">Kontak</a>
+            </nav>
+        </header>
+        <main>
+            <section class="hero" id="top">
+                <h1 aria-label="Naufal ’Afif Alfadhil">
+                    <span class="ln"><span data-split>Naufal</span></span
+                    ><span class="ln"><span data-split>’Afif</span></span
+                    ><span class="ln"><span data-split>Alfadhil</span></span>
+                </h1>
+                <div class="hero-foot">
+                    <p>Web Developer, Frontend Developer, dan Data Science.</p>
+                    <span class="cue">Gulir</span>
+                </div>
+            </section>
+            <section class="intro">
+                <p class="scrub">
+                    Saya mengembangkan aplikasi web dan sistem berbasis AI,
+                    mulai dari perancangan antarmuka hingga pengolahan data dan
+                    pengembangan backend.
+                </p>
+            </section>
+            <section id="proyek" class="showcase" style="--n: 4">
+                <div class="sec"><h2>Proyek</h2></div>
+                <div class="track">
+                    <div class="stage">
+                        <div class="fold-back" aria-hidden="true"></div>
+                        <div class="cards">
+                            <article class="card c1" id="hillab">
+                                <div class="ct">
+                                    <h3>HillabKMS</h3>
+                                    <p class="meta">
+                                        Full-stack dan pipeline RAG
+                                    </p>
+                                    <p class="sum">
+                                        Sistem pencarian dokumen internal berbasis AI yang memungkinkan pengguna mengunggah PDF dan mengajukan pertanyaan dalam bahasa alami. Jawaban dilengkapi dengan referensi halaman dari dokumen sumber. Monorepo Next.js dan FastAPI, dijalankan dengan Docker Compose.
+                                    </p>
+                                    <ul class="pills">
+                                        <li>Next.js</li>
+                                        <li>TypeScript</li>
+                                        <li>Tailwind CSS</li>
+                                        <li>FastAPI</li>
+                                        <li>Python</li>
+                                        <li>Qdrant</li>
+                                        <li>PostgreSQL</li>
+                                        <li>Docker</li>
+                                    </ul>
+                                    <p class="lnk">
+                                        <a
+                                            href="https://github.com/Basingz/HillabKMS"
+                                            rel="noopener"
+                                            target="_blank"
+                                            >Repositori</a
+                                        ><!-- Demo: tempel tautan deployment di sini -->
+                                    </p>
+                                </div>
+                                <div
+                                    class="shot-ph"
+                                    role="img"
+                                    aria-label="Tempat tangkapan layar HillabKMS"
+                                >
+                                    <!-- Ganti dengan: <img src="assets/hillab.jpg" alt="Tangkapan layar HillabKMS"> -->
+                                </div>
+                            </article>
+                            <article class="card c2" id="saka">
+                                <div class="ct">
+                                    <h3>SAKA, Sistem Asisten Kampus UNS</h3>
+                                    <p class="meta">Backend dan AI</p>
+                                    <p class="sum">
+                                        Chatbot yang membantu mahasiswa S1 UNS memahami regulasi akademik berdasarkan SK dan pedoman resmi. Sistem juga mendukung pembacaan dokumen hasil pemindaian menggunakan OCR. Jawaban dibatasi pada dokumen resmi dan mencantumkan pasal sumbernya.
+                                    </p>
+                                    <ul class="pills">
+                                        <li>FastAPI</li>
+                                        <li>Python</li>
+                                        <li>Gemini 2.5 Flash</li>
+                                        <li>ChromaDB</li>
+                                        <li>Tesseract OCR</li>
+                                        <li>OpenCV</li>
+                                    </ul>
+                                    <p class="lnk">
+                                        <a
+                                            href="https://github.com/AfifAlfadhil/sistemakademik"
+                                            rel="noopener"
+                                            target="_blank"
+                                            >Repositori</a
+                                        ><!-- Demo: tempel tautan deployment di sini -->
+                                    </p>
+                                </div>
+                                <div
+                                    class="shot-ph"
+                                    role="img"
+                                    aria-label="Tempat tangkapan layar SAKA, Sistem Asisten Kampus UNS"
+                                >
+                                    <!-- Ganti dengan: <img src="assets/saka.jpg" alt="Tangkapan layar SAKA, Sistem Asisten Kampus UNS"> -->
+                                </div>
+                            </article>
+                            <article class="card c3" id="movie">
+                                <div class="ct">
+                                    <h3>Movie</h3>
+                                    <p class="meta">Full-stack</p>
+                                    <p class="sum">
+                                        Aplikasi katalog film yang terintegrasi dengan TMDB API, dilengkapi fitur pencarian, filter genre, informasi film, dan daftar tontonan pribadi. Dibangun dengan Laravel dan Tailwind CSS.
+                                    </p>
+                                    <ul class="pills">
+                                        <li>PHP</li>
+                                        <li>Laravel</li>
+                                        <li>Blade</li>
+                                        <li>Tailwind CSS</li>
+                                        <li>Vite</li>
+                                        <li>TMDB API</li>
+                                    </ul>
+                                    <p class="lnk">
+                                        <a
+                                            href="https://github.com/AfifAlfadhil/Movie"
+                                            rel="noopener"
+                                            target="_blank"
+                                            >Repositori</a
+                                        ><!-- Demo: tempel tautan deployment di sini -->
+                                    </p>
+                                </div>
+                                <div
+                                    class="shot-ph"
+                                    role="img"
+                                    aria-label="Tempat tangkapan layar Movie"
+                                >
+                                    <!-- Ganti dengan: <img src="assets/movie.jpg" alt="Tangkapan layar Movie"> -->
+                                </div>
+                            </article>
+                            <article class="card c4" id="growpath">
+                                <div class="ct">
+                                    <h3>GrowPath</h3>
+                                    <p class="meta">Aplikasi web gamifikasi</p>
+                                    <p class="sum">
+                                        Habit tracker dengan konsep gamifikasi merawat tanaman digital. Menyelesaikan kebiasaan atau tugas memberi XP dan koin yang menumbuhkan tanaman digital, dan koin bisa dipakai di toko kustomisasi pot, frame, dan latar belakang.
+                                    </p>
+                                    <ul class="pills">
+                                        <li>PHP</li>
+                                        <li>Laravel</li>
+                                        <li>Vite</li>
+                                    </ul>
+                                    <p class="lnk">
+                                        <a
+                                            href="https://github.com/AfifAlfadhil/growpath"
+                                            rel="noopener"
+                                            target="_blank"
+                                            >Repositori</a
+                                        ><!-- Demo: tempel tautan deployment di sini -->
+                                    </p>
+                                </div>
+                                <div
+                                    class="shot-ph"
+                                    role="img"
+                                    aria-label="Tempat tangkapan layar GrowPath"
+                                >
+                                    <!-- Ganti dengan: <img src="assets/growpath.jpg" alt="Tangkapan layar GrowPath"> -->
+                                </div>
+                            </article>
+                        </div>
+                        <div class="fold-front" aria-hidden="true"></div>
+                        <div class="hud">
+                            <span class="cnt">01 / 04</span
+                            ><span class="dots"
+                                ><button
+                                    type="button"
+                                    aria-label="Proyek 1"
+                                ></button
+                                ><button
+                                    type="button"
+                                    aria-label="Proyek 2"
+                                ></button
+                                ><button
+                                    type="button"
+                                    aria-label="Proyek 3"
+                                ></button
+                                ><button
+                                    type="button"
+                                    aria-label="Proyek 4"
+                                ></button
+                            ></span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="eksperimen">
+                <div class="sec"><h2>Eksperimen</h2></div>
+                <div class="acc" id="memory">
+                    <button
+                        class="acc-btn"
+                        aria-expanded="false"
+                        aria-controls="memory-b"
+                    >
+                        <span class="t">OMORI’s Memory Game</span
+                        ><span class="m">Full-stack</span
+                        ><span class="pl" aria-hidden="true"></span>
+                    </button>
+                    <div class="acc-body" id="memory-b">
+                        <div class="ov">
+                            <div class="acc-in">
+                                <p>
+                                    Game mencocokkan kartu bertema OMORI dengan animasi flip 3D. Tersedia versi berbasis browser dan versi Python dengan penyimpanan skor melalui backend.
+                                </p>
+                                <ul>
+                                    <li>Kartu diacak setiap permainan baru.</li>
+                                    <li>
+                                        Musik latar dengan tombol hidup/mati.
+                                    </li>
+                                </ul>
+                                <p class="stack">
+                                    HTML, CSS, JavaScript, FastAPI, Pydantic
+                                </p>
+                                <p class="lnk">
+                                    <a
+                                        href="https://github.com/AfifAlfadhil/omori-memory-game"
+                                        rel="noopener"
+                                        target="_blank"
+                                        >Repositori</a
+                                    ><a
+                                        href="https://afifalfadhil.github.io/omori-memory-game/"
+                                        rel="noopener"
+                                        target="_blank"
+                                        >Demo</a
+                                    >
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="acc" id="morse">
+                    <button
+                        class="acc-btn"
+                        aria-expanded="false"
+                        aria-controls="morse-b"
+                    >
+                        <span class="t">MorseFlow</span
+                        ><span class="m">Pengembang</span
+                        ><span class="pl" aria-hidden="true"></span>
+                    </button>
+                    <div class="acc-body" id="morse-b">
+                        <div class="ov">
+                            <div class="acc-in">
+                                <p>
+                                   	Aplikasi penerjemah kode Morse menggunakan satu tombol, dengan durasi tekanan untuk membedakan titik dan garis.
+                                </p>
+                                <ul>
+                                    <li>
+                                        Huruf terkunci setelah 0,5 detik diam,
+                                        spasi kata setelah 1,2 detik.
+                                    </li>
+                                    <li>
+                                        Tersedia versi web dan versi desktop
+                                        Python dengan OpenCV.
+                                    </li>
+                                </ul>
+                                <p class="stack">
+                                    Web Audio API, JavaScript, Python, OpenCV
+                                </p>
+                                <p class="lnk">
+                                    <a
+                                        href="https://github.com/AfifAlfadhil/morse-code-translator"
+                                        rel="noopener"
+                                        target="_blank"
+                                        >Repositori</a
+                                    ><a
+                                        href="https://afifalfadhil.github.io/morse-code-translator/"
+                                        rel="noopener"
+                                        target="_blank"
+                                        >Demo</a
+                                    >
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="acc" id="mdedit">
+                    <button
+                        class="acc-btn"
+                        aria-expanded="false"
+                        aria-controls="mdedit-b"
+                    >
+                        <span class="t">Markdown Editor dan Catatan</span
+                        ><span class="m">Frontend</span
+                        ><span class="pl" aria-hidden="true"></span>
+                    </button>
+                    <div class="acc-body" id="mdedit-b">
+                        <div class="ov">
+                            <div class="acc-in">
+                                <p>
+                                    Editor Markdown dengan dua mode penyuntingan, yaitu mode kode dan teks kaya, serta fitur pratinjau langsung.
+                                </p>
+                                <ul>
+                                    <li>
+                                        Syntax highlighting memakai parser Lezer.
+                                    </li>
+                                    <li>
+                                        Ekstensi Tiptap: tabel, bubble menu, task item.
+                                    </li>
+                                </ul>
+                                <p class="stack">
+                                    React, CodeMirror, Tiptap, TypeScript
+                                </p>
+                                <p class="lnk">
+                                    <!-- Repositori: tempel URL repo di sini --><!-- Demo: tempel tautan deployment di sini -->
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="acc" id="shmup">
+                    <button
+                        class="acc-btn"
+                        aria-expanded="false"
+                        aria-controls="shmup-b"
+                    >
+                        <span class="t">2D Pixel Shooter</span
+                        ><span class="m">Game programmer</span
+                        ><span class="pl" aria-hidden="true"></span>
+                    </button>
+                    <div class="acc-body" id="shmup-b">
+                        <div class="ov">
+                            <div class="acc-in">
+                                <p>
+                                   	Game tembak-menembak 2D berbasis pixel art yang dikembangkan menggunakan Godot 4 dan GDScript.
+                                </p>
+                                <p class="stack">
+                                    Godot 4, GDScript, Pixel art
+                                </p>
+                                <p class="lnk">
+                                    <a
+                                        href="https://github.com/AfifAlfadhil/2D-Pixel-Shooter-Game"
+                                        rel="noopener"
+                                        target="_blank"
+                                        >Repositori</a
+                                    ><!-- Demo: tempel tautan deployment di sini -->
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="acc" id="album">
+                    <button
+                        class="acc-btn"
+                        aria-expanded="false"
+                        aria-controls="album-b"
+                    >
+                        <span class="t">OMORI Photo Album</span
+                        ><span class="m">Frontend</span
+                        ><span class="pl" aria-hidden="true"></span>
+                    </button>
+                    <div class="acc-body" id="album-b">
+                        <div class="ov">
+                            <div class="acc-in">
+                                <p>
+                                    Replika album foto Basil dari OMORI dengan fitur pembalik halaman dan musik latar.
+                                </p>
+                                <p class="stack">HTML, CSS, JavaScript</p>
+                                <p class="lnk">
+                                    <a
+                                        href="https://github.com/AfifAlfadhil/omori-photo-album"
+                                        rel="noopener"
+                                        target="_blank"
+                                        >Repositori</a
+                                    ><a
+                                        href="https://afifalfadhil.github.io/omori-photo-album/"
+                                        rel="noopener"
+                                        target="_blank"
+                                        >Demo</a
+                                    >
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="kompetisi">
+                <div class="sec"><h2>Kompetisi</h2></div>
+                <div class="acc" id="visbi">
+                    <button
+                        class="acc-btn"
+                        aria-expanded="false"
+                        aria-controls="visbi-b"
+                    >
+                        <span class="t">VISBI 2026</span
+                        ><span class="m">POSTIK UNS</span
+                        ><span class="pl" aria-hidden="true"></span>
+                    </button>
+                    <div class="acc-body" id="visbi-b">
+                        <div class="ov">
+                            <div class="acc-in">
+                                <p><span class="res">Finalis</span></p>
+                                <p>
+                                    Mengembangkan dashboard interaktif di Power BI untuk menganalisis data pemasaran dan penjualan sepanjang tahun 2025, dengan halaman Overview Revenue &amp; Sales, Marketing &amp; Ads, KOL &amp; Web Analytics, Customer Insight, serta Budget &amp; Planning.
+                                </p>
+                                <ul>
+                                    <li>Dashboard Power BI (.pbix)</li>
+                                    <li>Laporan insight strategis (PDF)</li>
+                                    <li>
+                                        Notebook Jupyter: pembersihan data dan EDA
+                                    </li>
+                                </ul>
+                                <p class="stack">
+                                    Analitik data dan business intelligence.
+                                    Power BI, Python, Data cleaning
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="acc" id="gamma">
+                    <button
+                        class="acc-btn"
+                        aria-expanded="false"
+                        aria-controls="gamma-b"
+                    >
+                        <span class="t">Gammafest 2026</span
+                        ><span class="m">Institut Pertanian Bogor</span
+                        ><span class="pl" aria-hidden="true"></span>
+                    </button>
+                    <div class="acc-body" id="gamma-b">
+                        <div class="ov">
+                            <div class="acc-in">
+                                <p>
+                                    Mengembangkan model prediktif melalui rekayasa fitur, ekstraksi informasi dari metadata dokumen ilmiah, dan penggabungan beberapa model.
+                                </p>
+                                <ul>
+                                    <li>Pipeline end-to-end</li>
+                                    <li>Notebook EDA dan modeling</li>
+                                </ul>
+                                <p class="stack">
+                                    Data science dan machine learning. Python,
+                                    Scikit-Learn, Feature engineering
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="acc" id="uxvidia">
+                    <button
+                        class="acc-btn"
+                        aria-expanded="false"
+                        aria-controls="uxvidia-b"
+                    >
+                        <span class="t">UXvidia, Arkavidia ITB</span
+                        ><span class="m">Institut Teknologi Bandung</span
+                        ><span class="pl" aria-hidden="true"></span>
+                    </button>
+                    <div class="acc-body" id="uxvidia-b">
+                        <div class="ov">
+                            <div class="acc-in">
+                                <p>
+                                    Mengidentifikasi dan merancang solusi atas permasalahan nyata menggunakan pendekatan Design Thinking, mulai dari riset pengguna hingga prototipe antarmuka.
+                                </p>
+                                <ul>
+                                    <li>Case study UI/UX</li>
+                                    <li>Prototipe high-fidelity di Figma</li>
+                                    <li>Dokumentasi usability testing</li>
+                                </ul>
+                                <p class="stack">
+                                    Desain produk UI/UX. Figma, Design Thinking,
+                                    User testing
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="acc" id="netro">
+                    <button
+                        class="acc-btn"
+                        aria-expanded="false"
+                        aria-controls="netro-b"
+                    >
+                        <span class="t">BCC Netropreneur UGM</span
+                        ><span class="m">Universitas Gadjah Mada</span
+                        ><span class="pl" aria-hidden="true"></span>
+                    </button>
+                    <div class="acc-body" id="netro-b">
+                        <div class="ov">
+                            <div class="acc-in">
+                                <p>
+                                    Merumuskan inovasi produk perangkat lunak,
+                                    studi kelayakan pasar, analisis SWOT dan
+                                    Porter, serta model komersialisasi.
+                                </p>
+                                <ul>
+                                    <li>
+                                        Casebook dan deck presentasi semifinal
+                                    </li>
+                                    <li>Studi kelayakan pasar dan finansial</li>
+                                </ul>
+                                <p class="stack">
+                                    Studi kasus bisnis teknologi. Strategi
+                                    produk, Analisis pasar
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="acc" id="cdw">
+                    <button
+                        class="acc-btn"
+                        aria-expanded="false"
+                        aria-controls="cdw-b"
+                    >
+                        <span class="t">Campus Data Week Challenge</span
+                        ><span class="m">Universitas Airlangga</span
+                        ><span class="pl" aria-hidden="true"></span>
+                    </button>
+                    <div class="acc-body" id="cdw-b">
+                        <div class="ov">
+                            <div class="acc-in">
+                                <p>
+                                    Menganalisis data transaksi dan operasional untuk mengidentifikasi anomali serta menghasilkan rekomendasi berbasis data.
+                                </p>
+                                <p class="stack">
+                                    Analitik data. Python
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="acc" id="calico">
+                    <button
+                        class="acc-btn"
+                        aria-expanded="false"
+                        aria-controls="calico-b"
+                    >
+                        <span class="t">CALICO Fall</span
+                        ><span class="m">UC Berkeley CALICO</span
+                        ><span class="pl" aria-hidden="true"></span>
+                    </button>
+                    <div class="acc-body" id="calico-b">
+                        <div class="ov">
+                            <div class="acc-in">
+                                <p>
+                                    Menyelesaikan berbagai permasalahan algoritmik yang mencakup teori graf, pemrograman dinamis, dan matematika dengan batasan komputasi tertentu.
+                                </p>
+                                <ul>
+                                    <li>Penyelesaian problem set algoritmik</li>
+                                </ul>
+                                <p class="stack">
+                                    Pemrograman kompetitif. Python, Algoritma
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="keahlian">
+                <div class="sec"><h2>Keahlian</h2></div>
+                <div class="skills">
+                    <div>
+                        <h3>Frontend dan web</h3>
+                        <ul>
+                            <li>Next.js</li>
+                            <li>React</li>
+                            <li>TypeScript</li>
+                            <li>Tailwind CSS</li>
+                            <li>JavaScript</li>
+                            <li>HTML dan CSS</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Backend dan API</h3>
+                        <ul>
+                            <li>FastAPI</li>
+                            <li>Python</li>
+                            <li>REST API</li>
+                            <li>PostgreSQL</li>
+                            <li>SQLAlchemy</li>
+                            <li>Node.js</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>AI dan vector search</h3>
+                        <ul>
+                            <li>Arsitektur RAG</li>
+                            <li>Qdrant</li>
+                            <li>ChromaDB</li>
+                            <li>Gemini API</li>
+                            <li>OCR (Tesseract, OpenCV)</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>DevOps dan analitik</h3>
+                        <ul>
+                            <li>Docker dan Compose</li>
+                            <li>Git dan GitHub</li>
+                            <li>Power BI</li>
+                            <li>EDA dan data cleaning</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="contact" id="kontak">
+                <p>
+                    Let's connect and share some ideas.
+                </p>
+                <a class="mail" href="mailto:novalnoval575@gmail.com"
+                    >novalnoval575@gmail.com</a
+                >
+                <div class="row">
+                    <button id="copy" type="button" hidden>Salin email</button
+                    ><a
+                        class="gh"
+                        href="https://github.com/AfifAlfadhil"
+                        rel="noopener"
+                        target="_blank"
+                        >github.com/AfifAlfadhil</a
+                    >
+                </div>
+            </section>
+        </main>
+        <script src="js/main.js"></script>
+    </body>
 </html>
